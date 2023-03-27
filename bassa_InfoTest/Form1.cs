@@ -21,5 +21,24 @@ namespace bassa_InfoTest
         {
 
         }
+
+        public class ListaCandidati
+        {
+            private List<bassa_Candidato> candidati;
+            public ListaCandidati()
+            {
+                candidati = new List<bassa_Candidato>();
+            }
+
+            public void AggiungiCandidato(bassa_Candidato candidato)
+            {
+                bassa_Candidato.Add(candidato);
+            }
+            public void eliminaCandidato(bassa_Candidato candidato)
+            {
+                bassa_Candidato.Remove(candidato);
+            }
+        }
+
+        
     }
-}
